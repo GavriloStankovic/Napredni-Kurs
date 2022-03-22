@@ -3,7 +3,13 @@ let customers = [
         ime: 'Ana',
         prezime: 'Mitrovic',
         godine: 27,
-        
+        ceh: {
+            redbul: 0,
+            viski: 0,
+            vodka: 2,
+            koktel: 15
+        }
+    }, 
     {
         ime: 'Jovan',
         prezime: 'Todorovic',
