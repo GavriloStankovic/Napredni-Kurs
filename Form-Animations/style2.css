@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(14, 12, 31, 1) 15%, rgba(79, 67, 188, 1) 100%);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 95vh;
+    border: 3px solid #3f43bc;
+    border-radius: 100px;
+    background-color: #0e0c1f;
+    row-gap: 0.7rem;
+    animation-name: blueLight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.one {
+    display: flex;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    row-gap: 0.7rem;
+    width: 100%;
+}
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+#register-form {
+    font-size: 30px;
+    margin-top: 15px;
+    color: #68e0cc;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+label {
+    color: #68e0cc;
+    font-size: 15px;
+}
+
+[type='text'],
+[type='email'],
+[type='date'],
+[type='tel'],
+[type='password'] {
+    border: 2px solid #68e0cc;
+    padding: 1% 3%;
+    border-radius: 2rem;
+    width: 50%;
+    background-color: #0e0c1f;
+    color: #68e0cc;
+    text-align: center;
+    transition-property: filter;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+::placeholder {
+    color: #68e0cc;
+    opacity: 0.5;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+[type='text']:focus,
+[type='email']:focus,
+[tyoe='date']:focus,
+[type='tel']:focus,
+[type='password']:focus {
+    outline: none;
+    filter: drop-shadow(0 0 20px #68e0cc);
+}
+
+[type='submit'] {
+    width: 40%;
+    border: 2px solid #68e0cc;
+    border-radius: 2rem;
+    padding: 1.5% 4%;
+    background-color: #0e0c1f;
+    text-align: center;
+    color: #68e0cc;
+    animation-name: blueLightSubmit;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+[type='submit']:hover {
+    filter: drop-shadow(0 0 20px #68e0cc);
+    color: #3f43bc;
+    transition: 1s ease-in;
+    cursor: pointer;
+    width: 45%;
+}
+
+@keyframes blueLightSubmit {
+    0% {
+        filter: drop-shadow(0 0 0 #68e0cc);
+    }
+    50% {
+        filter: drop-shadow(0 0 20px #68e0cc);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 #68e0cc);
+    }
+}
+
+@keyframes blueLight {
+    0% {
+        filter: drop-shadow(0 0 0 #3f43bc);
+    }
+    50% {
+        filter: drop-shadow(0 0 40px #3f43bc);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 #3f43bc);
+    }
+}
