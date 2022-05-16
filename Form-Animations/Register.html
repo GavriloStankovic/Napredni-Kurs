@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style2.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/Register.css">
+    <title>Register</title>
 </head>
 <body>
     <form action="" method="">
         <div class="one"><label for="" id="register-form">REGISTER</label></div>
 
-       <div class="two"><label for="fullName">FULL NAME</label>
-        <input type="text" name="fullName" id="fullName" required>
+       <div class="two">
+        <label for="firstName">FIRST NAME</label>
+        <input type="text" name="firstName" id="firstName" required>
+
+        <label for="lastName">LAST NAME</label>
+        <input type="text" name="lastName" id="lastName" required>
 
         <label for="username">USERNAME</label>
         <input type="text" name="username" id="username" required>
@@ -32,7 +36,10 @@
         <label for="confirmPassword">CONFIRM PASSWORD</label>
         <input type="password" name="confirmPassword" id="confirmPassword" required></div>
 
-        <div class="three"><input type="submit" value="REGISTER"></div>
+        <div class="three">
+            <input type="submit" value="REGISTER" id="submit">
+        </div>
     </form>
+    <script type="module" src="/Register.js"></script>
 </body>
 </html>

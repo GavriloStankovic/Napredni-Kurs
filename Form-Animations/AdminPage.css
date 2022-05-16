@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, rgba(14, 12, 31, 1) 15%, rgba(79, 67, 188, 1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #68e0cc;
+    justify-content: center;
+    align-items: center;
+}
+.naslov {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    color: #68e0cc;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+a {
+    width: 40%;
+    border: 2px solid #68e0cc;
+    border-radius: 2rem;
+    padding: 2% 7%;
+    background-color: #0e0c1f;
+    text-align: center;
+    color: #68e0cc;
+    text-decoration: none;
+    animation-name: blueLight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+a:hover {
+    filter: drop-shadow(0 0 20px #68e0cc);
+    color: #3f43bc;
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+.main {
+    width: 98%;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: #0e0c1f;
+    border: 3px solid #68e0cc;
+    border-radius: 50px;
+    row-gap: 1rem;
+    animation-name: blueLight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#mainRow {
+    width: 98%;
+    margin: auto;
+    margin-bottom: 1%;
+    border-bottom: 2px solid #68e0cc;
+}
+#mainRow p {
+    font-size: 1.5rem;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1% 0%;
+    width: 95%;
+    margin: auto;
+    color: #68e0cc;
+}
+.row:hover {
+    cursor: pointer;
+}
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    width: 11%;
+}
+.delete {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#delete {
+    display: flex;
+    position: relative;
+    right: 85px;
+    width: 9%;
+    border: 2px solid #68e0cc;
+    border-radius: 2rem;
+    padding: 1% 2%;
+    background-color: #0e0c1f;
+    text-align: center;
+    color: #68e0cc;
+    text-decoration: none;
+    animation-name: blueLight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#delete:hover {
+    cursor: pointer;
+    color: #3f43bc;
+    transition: 1s ease-in;
+}
+@keyframes blueLight {
+    0% {
+        filter: drop-shadow(0 0 0 #3f43bc);
+    }
+    50% {
+        filter: drop-shadow(0 0 40px #3f43bc);
+    }
+    100% {
+        filter: drop-shadow(0 0 0 #3f43bc);
+    }
+}
