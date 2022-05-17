@@ -69,13 +69,13 @@ export const renderAdminPage = (writteUsers) => {
          pPassword.textContent = nizKorisnika[i].password
 
          divRow.append(
+             pUsername,
              pFirstName,
              pLastName,
-             pUsername,
-             pDateOfBirth,
              pEmail,
+             pPassword,
              pPhoneNumber,
-             pPassword
+             pDateOfBirth
          )
 
          writteUsers.appendChild(divRow)
